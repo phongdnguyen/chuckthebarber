@@ -1,4 +1,12 @@
-[class *= "col"]{
+// Color Pallete
+$primary : greenyellow;
+$active : green;
+// $background : red;
+$shadow : black;
+$foreground : white;
+$background : rgb(164, 230, 63);
+
+[class *= "col"]:not(button){
     padding: 1.5rem;
 }
 
@@ -8,14 +16,53 @@
 
 [class *= "primary"]{
     color: black ;
-    border-color: greenyellow;
+    border-color: $primary;
 }
 
+[class*="info"]{
+    font-weight: bold;
+    font-size: larger;
+    color: $primary !important;
+}
+span,
+p,
+.row{
+    background-color: transparent;
+}
+
+em,
+address{
+    margin: 0rem;
+    background-color: transparent;
+}
+ul{
+    background-color: transparent;
+}
+ul li{
+    font-size: larger;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+a {
+    color: $primary;
+}
+
+button.bg-primary:focus{
+    background-color: $primary !important;
+}
+
+:not(:disabled):not(.disabled).active.btn-primary, 
+:not(:disabled):not(.disabled).btn-primary:active, 
+.show > .dropdown-toggle.btn-primary,
+a.bg-primary:focus, 
+a.bg-primary:hover, 
+button.bg-primary:hover,
 [class *= "primary"]:hover{
-    color: white;
-    box-shadow: 0px 0px 10px white;
+    color: $foreground;
+    box-shadow: 0px 0px 10px $shadow !important;
     border-color: transparent;
-    background-color: green !important;
+    background-color: $active !important;
 }
 
 .img-fluid{
@@ -24,29 +71,35 @@
 }
 
 a:hover, i:hover{
-    text-shadow: 0px 0px 3px white;
-    color: green;
+    text-shadow: 0px 0px 3px $shadow;
+    color: $active;
 }
 
 .bg-primary, .btn-primary{
-    background-color: greenyellow !important;
-}
-
-a.bg-primary:focus,
-a.bg-primary:hover,
-button.bg-primary:focus,
-button.bg-primary:hover {
-  background-color: white !important;
+    background-color: $primary !important;
 }
 
 .title{
-    text-shadow: 0px 0px 4px black;
+    // text-shadow: 0px 0px 1px black;
+    font-weight: 500;
 }
 
-.blur{
+.flex-item-start{
+    align-items: flex-start;
+}
+
+.flex-item-end{
+    align-items: flex-end;
+}
+
+.flex-item-center{
+    align-items: center;
+}
+
+.overlay{
     background: gray;
-    opacity: .75;
-    color: greenyellow;
+    opacity: .8;
+    color: $primary;
     margin: 0rem;
 }
 
@@ -61,7 +114,8 @@ button.bg-primary:hover {
 // Social Media Link
 nav a{
     margin-bottom: 1rem;
-    color: greenyellow;
+    color: $primary;
+    font-size: smaller;
 }
 
 nav a i {

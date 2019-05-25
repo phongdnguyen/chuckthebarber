@@ -1,4 +1,4 @@
-[class*="col"] {
+[class*="col"]:not(button) {
   padding: 1.5rem;
 }
 
@@ -11,10 +11,52 @@
   border-color: greenyellow;
 }
 
+[class*="info"] {
+  font-weight: bold;
+  font-size: larger;
+  color: greenyellow !important;
+}
+
+span,
+p,
+.row {
+  background-color: transparent;
+}
+
+em,
+address {
+  margin: 0rem;
+  background-color: transparent;
+}
+
+ul {
+  background-color: transparent;
+}
+
+ul li {
+  font-size: larger;
+  font-weight: bolder;
+  background-color: transparent;
+}
+
+a {
+  color: greenyellow;
+}
+
+button.bg-primary:focus {
+  background-color: greenyellow !important;
+}
+
+:not(:disabled):not(.disabled).active.btn-primary,
+:not(:disabled):not(.disabled).btn-primary:active,
+.show > .dropdown-toggle.btn-primary,
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:hover,
 [class*="primary"]:hover {
   color: white;
-  -webkit-box-shadow: 0px 0px 10px white;
-          box-shadow: 0px 0px 10px white;
+  -webkit-box-shadow: 0px 0px 10px black !important;
+          box-shadow: 0px 0px 10px black !important;
   border-color: transparent;
   background-color: green !important;
 }
@@ -25,7 +67,7 @@
 }
 
 a:hover, i:hover {
-  text-shadow: 0px 0px 3px white;
+  text-shadow: 0px 0px 3px black;
   color: green;
 }
 
@@ -33,20 +75,31 @@ a:hover, i:hover {
   background-color: greenyellow !important;
 }
 
-a.bg-primary:focus,
-a.bg-primary:hover,
-button.bg-primary:focus,
-button.bg-primary:hover {
-  background-color: white !important;
-}
-
 .title {
-  text-shadow: 0px 0px 4px black;
+  font-weight: 500;
 }
 
-.blur {
+.flex-item-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-item-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-item-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay {
   background: gray;
-  opacity: .75;
+  opacity: .8;
   color: greenyellow;
   margin: 0rem;
 }
@@ -62,6 +115,7 @@ button.bg-primary:hover {
 nav a {
   margin-bottom: 1rem;
   color: greenyellow;
+  font-size: smaller;
 }
 
 nav a i {

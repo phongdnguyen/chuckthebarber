@@ -1,7 +1,6 @@
 "use strict";
 
 var btn = document.querySelectorAll("[data-toggle='tab']");
-// var img = document.querySelectorAll(".card-img-overlay");
 
 // IE11 does not like foreach function
 for (let index = 0; index < btn.length; index++) {
@@ -9,9 +8,38 @@ for (let index = 0; index < btn.length; index++) {
     element.addEventListener("click", removeActive);
 }
 
-function removeActive() {
-    this.classList.remove("active");
+
+
+function removeActive(e) {
+    var sibling = e.target.parentElement.children;
+    
+    for (let index = 0; index < sibling.length; index++) {
+        const element = sibling[index];
+        element.classList.remove("active");
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var img = document.querySelectorAll(".card-img-overlay");
 
 // for (let index = 0; index < img.length; index++) {
 //     const element = img[index];
