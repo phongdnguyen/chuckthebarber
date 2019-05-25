@@ -1,0 +1,84 @@
+[class *= "col"]{
+    padding: 1.5rem;
+}
+
+[class *= "card"]{
+    border-radius: 0rem;
+}
+
+[class *= "primary"]{
+    color: black ;
+    border-color: greenyellow;
+}
+
+[class *= "primary"]:hover{
+    color: white;
+    box-shadow: 0px 0px 10px white;
+    border-color: transparent;
+    background-color: green !important;
+}
+
+.img-fluid{
+    width: 100%;
+    height: 100%;
+}
+
+a:hover, i:hover{
+    text-shadow: 0px 0px 3px white;
+    color: green;
+}
+
+.bg-primary, .btn-primary{
+    background-color: greenyellow !important;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
+  background-color: white !important;
+}
+
+.title{
+    text-shadow: 0px 0px 4px black;
+}
+
+.blur{
+    background: gray;
+    opacity: .75;
+    color: greenyellow;
+    margin: 0rem;
+}
+
+.background{
+    background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 0rem;
+}
+
+// Social Media Link
+nav a{
+    margin-bottom: 1rem;
+    color: greenyellow;
+}
+
+nav a i {
+    margin-right: 2rem;
+    margin-bottom: .5rem;
+}
+
+.card-img-overlay{
+    padding: 0rem;
+}
+
+.after{
+    transition: opacity 300ms ease-in;
+}
+
+.after:hover{
+    opacity: 0;
+    transition: opacity 1000ms ;
+}
+

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "CAAA,AAAA,AAAA,KAAC,EAAS,WAAW,AAApB,EAAqB;EAClB,MAAM,EAAE,uBAAuB;CAClC;;CACD,AAAA,AAAA,KAAC,EAAS,KAAK,AAAd,EAAe;EACZ,MAAM,EAAE,iBAAiB;CAC5B;;CACD,AAAA,AAAA,KAAC,EAAS,KAAK,AAAd,EAAe;EACZ,MAAM,EAAE,kBAAkB;CAC7B",
+    "sources": [
+        "designer.scss"
+    ],
+    "names": [],
+    "file": "designer.css"
+}

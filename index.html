@@ -1,42 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Chuck the Barber</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <title>Chuck the Barber</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-    <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
+        <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+        <!-- Bootstrap CSS -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="src/css/bootstrap.min.css" />
 
-    <!-- Fontawesome -->
-    <!-- NEED TO LOCATE CDN FOR FONTAWESOME PACKAGE -->
-    <link rel="stylesheet" href="src/font/fontawesome-free-5.8.1-web/css/all.css">
-    <link rel="stylesheet" href="src/font/fontawesome-free-5.8.1-web/css/fontawesome.min.css">
+        <!-- Fontawesome -->
+        <!-- NEED TO LOCATE CDN FOR FONTAWESOME PACKAGE -->
+        <link
+            rel="stylesheet"
+            href="src/font/fontawesome-free-5.8.1-web/css/all.css"
+        />
+        <link
+            rel="stylesheet"
+            href="src/font/fontawesome-free-5.8.1-web/css/fontawesome.min.css"
+        />
 
-    <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
+        <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
 
-    <link rel="stylesheet" href="src/scss/custom.css">
-    
-  </head>
-  <body>
-      
-    <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
+        <link rel="stylesheet" href="src/scss/custom.css" />
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-    <script src="src/js/jquery.slim.js"></script>
-    <script src="src/js/popper.min.js"></script>
-    <script src="src/js/bootstrap.min.js"></script>
+        <!-- FOR DESIGN PURPOSES ONLY. REMOVE FOR PRODUCTION-->
+        <link rel="stylesheet" href="src/scss/designer.css" />
+    </head>
 
-    <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
+    <body>
+		<!-- Masthead -->
+		<div class="background ">
+			<div class="jumbotron blur">
+				<div class="container ">
+					<h1 class="display-3"><span class="title">Chuck Deburger</span></h1>
+					<p class="lead">Competition Barber <br>
+					   Arizona State License: #123456
+					</p>
+					<p>J.J. Barbershop</p>
+					<hr class="my-2" />
+					<nav class="navbar navbar-expand-md navbar-light px-0">
 
-    <script src="src/js/custom.js"></script>
-  </body>
+						<button class="navbar-toggler bg-primary " type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+							aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse " id="collapsibleNavId">
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+								<a class="btn btn-primary mr-3" href="#home" role="button" data-toggle="tab">
+									Home
+								</a>
+								<a class="btn btn-primary mr-3" href="#service" role="button" data-toggle="tab">
+									Services
+								</a>
+								<a class="btn btn-primary mr-3" href="#experience" role="button" data-toggle="tab">
+									Experience
+								</a>
+								<a class="btn btn-primary mr-3" href="#contact" role="button" data-toggle="tab">
+									Contact
+								</a>
+							</ul>
+
+							<div class="list-inline my-2 my-lg-0">
+								<li class="list-inline-item ">
+									<a href="#">
+										<i class="fab fa-facebook fa-3x"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#">
+										<i class="fab fa-twitter fa-3x"></i>
+									</a>
+								</li>
+								<li class="list-inline-item">
+									<a href="#">
+										<i class="fab fa-whatsapp fa-3x"></i>
+									</a>
+								</li>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		
+
+        <!-- Tabe Panes -->
+        <section>
+            <div class="tab-content">
+                <!-- Home -->
+                <div class="tab-pane fade show active" id="home">
+                    <main>
+                        <div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-6">
+									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-1.jpg" alt="" />
+									<img class="card-img" src="src/image/bg-showcase-1-before.jpg" alt="">
+								</div>
+								<div class="col-lg-6">
+									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-2.jpg" alt="" />
+									<img class="card-img" src="src/image/bg-showcase-2-before.jpg" alt="" />
+								</div>
+								<div class="col-lg-6">
+									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-2.jpg" alt="" />
+									<img class="card-img" src="src/image/bg-showcase-2-before.jpg" alt="" />
+								</div>
+								<div class="col-lg-6">
+									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-1.jpg" alt="" />
+									<img class="card-img" src="src/image/bg-showcase-1-before.jpg" alt="">
+								</div>
+								<div class="col-lg-6">
+									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-1.jpg" alt="" />
+									<img class="card-img" src="src/image/bg-showcase-1-before.jpg" alt="" />
+								</div>
+								<div class="col-lg-6">
+									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-2.jpg" alt="" />
+									<img class="card-img" src="src/image/bg-showcase-2-before.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+                    </main>
+                </div>
+
+                <!-- Service -->
+                <div class="tab-pane fade" id="service" role="tabpanel">
+                    <div class="container">
+                        This is the service section
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="tab-pane fade" id="experience" role="tabpanel">
+                    <div class="container">
+                        This is the experience section
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="tab-pane fade" id="contact" role="tabpanel">
+                    <div class="container">
+                        This is the contact section
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+        <script src="src/js/jquery.slim.js"></script>
+        <script src="src/js/popper.min.js"></script>
+        <script src="src/js/bootstrap.min.js"></script>
+
+        <!-- LINKS NEED TO BE SWITCHED ONCE DEPLOYED -->
+
+        <script src="src/js/custom.js"></script>
+    </body>
 </html>
