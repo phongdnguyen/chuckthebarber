@@ -1,10 +1,8 @@
 // Color Pallete
 $primary : greenyellow;
 $active : green;
-// $background : red;
 $shadow : black;
 $foreground : white;
-$background : rgb(164, 230, 63);
 
 [class *= "col"]:not(button){
     padding: 1.5rem;
@@ -131,8 +129,9 @@ nav a i {
     transition: opacity 300ms ease-in;
 }
 
-.after:hover{
-    opacity: 0;
-    transition: opacity 1000ms ;
-}
+//Accomplished in javascript
+// .after:hover{
+//     opacity: 0;
+//     transition: opacity 1000ms ;
+// }
 
