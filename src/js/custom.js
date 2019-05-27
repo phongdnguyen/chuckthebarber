@@ -8,8 +8,6 @@ for (let index = 0; index < btn.length; index++) {
     element.addEventListener("click", removeActive);
 }
 
-
-
 function removeActive(e) {
     var sibling = e.target.parentElement.children;
     
@@ -19,24 +17,22 @@ function removeActive(e) {
     }
 }
 
+var afterImages = document.getElementsByClassName("after");
 
+var timer = window.setInterval(imageopacity, 4000);
 
+function imageopacity() {
 
+    for (let index = 0; index < afterImages.length; index++) {
+        const element = afterImages[index];
+        if (element.style.opacity == 1 || element.style.opacity == "") {
+            element.style.opacity = 0;
+        } else {
+            element.style.opacity = 1;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 // var img = document.querySelectorAll(".card-img-overlay");

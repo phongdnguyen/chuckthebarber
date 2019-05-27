@@ -105,7 +105,7 @@ a:hover, i:hover {
 }
 
 .background {
-  background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg);
+  background: url(/src/image/green_trees.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -128,7 +128,7 @@ nav a i {
 }
 
 .after {
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
 }
 /*# sourceMappingURL=custom.css.map */
