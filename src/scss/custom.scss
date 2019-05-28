@@ -1,10 +1,18 @@
 // Color Pallete
-$primary : yellow;
+
+// $primary :rgba(172, 255, 47, 0.8);
+// $active : green;
+// $shadow : black;
+// $foreground : white;
+// $overlay : rgba(76, 76, 76, 0.8);
+// $caption: rgba(0, 0, 0, 0.5);
+
+$primary : rgba(255, 255, 0, 0.98);
 $active : orange;
 $shadow : black;
 $foreground : white;
-$overlay : hsl(0, 0%, 30%);
-$info: rgb(0, 0, 0);
+$overlay : rgba(76, 76, 76, 0.8);
+$caption: rgba(0, 0, 0, 0.5);
 
 [class *= "col"]:not(button){
     padding: 1.5rem;
@@ -80,7 +88,7 @@ a:hover, i:hover{
 }
 
 .title{
-    // text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 15px $shadow;
     font-weight: 500;
 }
 
@@ -97,18 +105,17 @@ a:hover, i:hover{
 }
 
 .bg-caption{
-    background-color: $info;
+    background: $caption;
 }
 
 .overlay{
     background: $overlay;
-    opacity: .8;
     color: $primary;
     margin: 0rem;
 }
 
 .background{
-    background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg);
+    background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg) fixed;
     background-size: 100% 100% ;
     background-repeat: no-repeat;
     background-position: right;
@@ -120,11 +127,18 @@ nav a{
     margin-bottom: 1rem;
     color: $primary;
     font-size: smaller;
+    text-shadow: 0px 0px 5px $shadow;
 }
 
 nav a i {
     margin-right: 2rem;
     margin-bottom: .5rem;
+}
+.social-media{
+    width: 3rem ;
+    height: 3rem ;
+    vertical-align: top;
+    margin-left: 1.5rem;
 }
 
 .card-img-overlay{
@@ -143,8 +157,13 @@ nav a i {
     top: 80%;
 }
 
+o-80{
+    opacity: .8;
+}
+
 .footer{
-    font-weight: bolder;
+    font-weight: 300;
+    // font-size: larger;
 }
 
 @media (min-width: 0px){

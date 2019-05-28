@@ -83,7 +83,7 @@ function togglelockon(){
 function togglelockoff(){
     this.classList.remove("lock");
     this.children[0].classList.add("collapse");
-    this.children[1].style.opacity = 0;
+    this.children[1].style.opacity = 1;
 }
 
 function changeOpacity() {

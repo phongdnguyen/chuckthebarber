@@ -8,13 +8,13 @@
 
 [class*="primary"] {
   color: black;
-  border-color: yellow;
+  border-color: rgba(255, 255, 0, 0.98);
 }
 
 [class*="info"] {
   font-weight: bold;
   font-size: larger;
-  color: yellow !important;
+  color: rgba(255, 255, 0, 0.98) !important;
 }
 
 span,
@@ -40,11 +40,11 @@ ul li {
 }
 
 a {
-  color: yellow;
+  color: rgba(255, 255, 0, 0.98);
 }
 
 button.bg-primary:focus {
-  background-color: yellow !important;
+  background-color: rgba(255, 255, 0, 0.98) !important;
 }
 
 :not(:disabled):not(.disabled).active.btn-primary,
@@ -72,10 +72,11 @@ a:hover, i:hover {
 }
 
 .bg-primary, .btn-primary {
-  background-color: yellow !important;
+  background-color: rgba(255, 255, 0, 0.98) !important;
 }
 
 .title {
+  text-shadow: 0px 0px 15px black;
   font-weight: 500;
 }
 
@@ -98,18 +99,17 @@ a:hover, i:hover {
 }
 
 .bg-caption {
-  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .overlay {
-  background: #4d4d4d;
-  opacity: .8;
-  color: yellow;
+  background: rgba(76, 76, 76, 0.8);
+  color: rgba(255, 255, 0, 0.98);
   margin: 0rem;
 }
 
 .background {
-  background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg);
+  background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg) fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -118,13 +118,21 @@ a:hover, i:hover {
 
 nav a {
   margin-bottom: 1rem;
-  color: yellow;
+  color: rgba(255, 255, 0, 0.98);
   font-size: smaller;
+  text-shadow: 0px 0px 5px black;
 }
 
 nav a i {
   margin-right: 2rem;
   margin-bottom: .5rem;
+}
+
+.social-media {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: top;
+  margin-left: 1.5rem;
 }
 
 .card-img-overlay {
@@ -138,13 +146,17 @@ nav a i {
 
 .text-overlay {
   padding-top: 1rem;
-  color: yellow;
+  color: rgba(255, 255, 0, 0.98);
   font-size: 3rem;
   top: 80%;
 }
 
+o-80 {
+  opacity: .8;
+}
+
 .footer {
-  font-weight: bolder;
+  font-weight: 300;
 }
 
 @media (min-width: 0px) {
