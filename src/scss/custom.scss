@@ -129,9 +129,11 @@ nav a i {
     transition: opacity 400ms ease-in;
 }
 
-//Accomplished in javascript
-// .after:hover{
-//     opacity: 0;
-//     transition: opacity 1000ms ;
-// }
+.text-overlay {
+    background-color: $primary;
+    padding-top: 1rem;
+    color: $shadow;
+    font-size: x-large;
+    top: 80%;
+}
 

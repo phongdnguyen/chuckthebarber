@@ -131,4 +131,12 @@ nav a i {
   -webkit-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
 }
+
+.text-overlay {
+  background-color: greenyellow;
+  padding-top: 1rem;
+  color: black;
+  font-size: x-large;
+  top: 80%;
+}
 /*# sourceMappingURL=custom.css.map */

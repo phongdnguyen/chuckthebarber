@@ -94,13 +94,13 @@
 							<div class="collapse navbar-collapse p-0" id="collapsibleNavId">
 								<!-- Tab Pane Toggle -->
 								<ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-									<a class="btn btn-primary mr-3 active" href="#home" role="button" data-toggle="tab">
+									<!-- <a class="btn btn-primary mr-3 active" href="#home" role="button" data-toggle="tab">
 										Home
 									</a>
-									<a id="test" class="btn btn-primary mr-3" href="#specialty" role="button" data-toggle="tab">
-										Specialty
+									<a id="test" class="btn btn-primary mr-3" href="#text-overlay" role="button" data-toggle="tab">
+										text-overlay
 									</a>
-									<!-- <a class="btn btn-primary mr-3" href="#contact" role="button" data-toggle="tab">
+									<a class="btn btn-primary mr-3" href="#contact" role="button" data-toggle="tab">
 										Contact
 									</a> -->
 								</ul>
@@ -146,35 +146,53 @@
                 <!-- Home -->
                 <div class="tab-pane fade show active" id="home" role="tabpanel">
                     <main>
-                        <div class="container-fluid ">
+                        <div class="container-fluid " >
 							<div class="row text-center">
 								<!-- Square 1 -->
 								<div class="col-lg-6 p-0">
+									<div class="card-img-overlay collapse text-overlay overlay">
+											Modern Cuts: Shaves, Fades, Tapers...
+									</div>
 									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-1.jpg" alt="" />
 									<img class="card-img" src="src/image/bg-showcase-1-before.jpg" alt="">
 								</div>
 								<!-- Square 2 -->
 								<div class="col-lg-6 p-0">
+									<div class="card-img-overlay collapse text-overlay overlay">
+										Traditional Cuts: Flat tops, Regular, Gentleman...
+									</div>
 									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-2.jpg" alt=""/>
 									<img class="card-img" src="src/image/bg-showcase-2-before.jpg" alt="" />
 								</div>
 								<!-- Square 3 -->
 								<div class="col-lg-6 p-0">
+									<div class="card-img-overlay collapse text-overlay overlay">
+										Styling: Layers, Trims, Color...
+									</div>
 									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-2.jpg" alt="" />
 									<img class="card-img" src="src/image/bg-showcase-2-before.jpg" alt="" />
 								</div>
 								<!-- Square 4 -->
 								<div class="col-lg-6 p-0">
+									<div class="card-img-overlay collapse text-overlay overlay">
+										Special: Point Cutting, Thinning, Perms...
+									</div>
 									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-1.jpg" alt="" />
 									<img class="card-img" src="src/image/bg-showcase-1-before.jpg" alt="">
 								</div>
 								<!-- Square 5 -->
 								<div class="col-lg-6 p-0">
+									<div class="card-img-overlay collapse text-overlay overlay">
+										Additional: Shaping, Line-ups, Eyebrows...
+									</div>
 									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-1.jpg" alt="" />
 									<img class="card-img" src="src/image/bg-showcase-1-before.jpg" alt="" />
 								</div>
 								<!-- Square 6 -->
 								<div class="col-lg-6 p-0">
+									<div class="card-img-overlay collapse text-overlay overlay">
+										The Best in the Southwest!
+									</div>
 									<img class="card-img-overlay img-fluid after" src="src/image/bg-showcase-2.jpg" alt="" />
 									<img class="card-img" src="src/image/bg-showcase-2-before.jpg" alt="" />
 								</div>
@@ -183,10 +201,10 @@
                     </main>
                 </div>
 
-                <!-- Specialty -->
-                <div class="tab-pane fade" id="specialty" role="tabpanel">
+                <!-- text-overlay -->
+                <!-- <div class="tab-pane fade" id="text-overlay" role="tabpanel">
                     <div class="container">
-                        This is the specialty section
+                        This is the text-overlay section
                         <br />
                         <br />
                         <br />
@@ -198,7 +216,7 @@
                         <br />
                         <br />
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Contact -->
                 <!-- <div class="tab-pane fade" id="contact" role="tabpanel">
@@ -237,19 +255,8 @@
 		<script src="src/js/custom.js"></script>
 
 		<script>
-			$(".after").mouseenter(function (e) {
-				// var insert = document.createElement("p");
-				// insert.innerText = "test";
-				var element = e.target;
-				e.target.style.opacity = 0;
-				// $(element).after(insert);
-				
-			});
-			$(".after").mouseleave(function (e) {
-				var element = e.target; 
-				e.target.style.opacity = 1;
-				// $(element).remove();
-			});
+			jqsc
+
 		</script>
 
     </body>
