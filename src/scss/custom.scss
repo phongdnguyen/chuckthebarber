@@ -1,8 +1,10 @@
 // Color Pallete
-$primary : greenyellow;
-$active : green;
+$primary : yellow;
+$active : orange;
 $shadow : black;
 $foreground : white;
+$overlay : hsl(0, 0%, 30%);
+$info: rgb(0, 0, 0);
 
 [class *= "col"]:not(button){
     padding: 1.5rem;
@@ -94,15 +96,19 @@ a:hover, i:hover{
     align-items: center;
 }
 
+.bg-caption{
+    background-color: $info;
+}
+
 .overlay{
-    background: gray;
+    background: $overlay;
     opacity: .8;
     color: $primary;
     margin: 0rem;
 }
 
 .background{
-    background: url(/src/image/green_trees.jpg);
+    background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg);
     background-size: 100% 100% ;
     background-repeat: no-repeat;
     background-position: right;
@@ -130,10 +136,76 @@ nav a i {
 }
 
 .text-overlay {
-    background-color: $primary;
+    // background-color: $primary;
     padding-top: 1rem;
-    color: $shadow;
-    font-size: x-large;
+    color: $primary;
+    font-size: 3rem;;
     top: 80%;
 }
 
+.footer{
+    font-weight: bolder;
+}
+
+@media (min-width: 0px){
+    .text-overlay{
+        font-size: .75rem;
+        top: 75%;
+        padding-top: 0rem;
+    }
+    .title{
+        font-size: 2.75rem;
+    }
+}
+@media (min-width: 276px){
+    .text-overlay{
+        font-size: .85rem;
+        top: 75%;
+        vertical-align: middle;
+    }
+    .title{
+        font-size: 3.5rem;
+    }
+}
+@media (min-width: 360px){
+    .text-overlay{
+        font-size: 1rem;
+        top: 80%;
+        vertical-align: middle;
+        padding-top: .75rem;
+    }
+    .title{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 478px){
+    .text-overlay{
+        font-size: 1.25rem;
+        top: 82%;
+    }
+}
+@media (min-width: 576px){
+    .text-overlay{
+        font-size: 1.75rem;
+        top: 82%;
+    }
+}
+@media (min-width: 768px){
+    .text-overlay{
+        font-size: 1.75rem;
+        top: 85%;
+    }
+}
+@media (min-width: 992px){
+    .text-overlay{
+        font-size: 1.25rem;
+        top: 82%;
+    }
+}
+@media (min-width: 1200px){
+    .text-overlay{
+        font-size: 1.5rem;
+        top: 82%;
+    }
+}

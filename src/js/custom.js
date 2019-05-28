@@ -22,10 +22,13 @@ function removeActive(e) {
 
 // Objects for auto change
 var afterObjects = document.getElementsByClassName("after");
+
 // Create timer
 var timer = window.setInterval(changeImage, 2000);
+
 // Generate random numbers based on length of after objects
 var randomNumbers = generateRandomNumbers(afterObjects.length);
+
 // Track iteration in after objects
 var loopCount = 1;
 var previousLoopCount = 0;
@@ -84,18 +87,14 @@ function togglelockoff(){
 }
 
 function changeOpacity() {
-    // if (!this.parentElement.classList.contains("lock")) {
-
-        if (this.style.opacity == 1 || this.style.opacity == "") {
-            this.parentElement.children[0].classList.remove("collapse");
-            // this.parentElement.classList.add("lock");
-            this.style.opacity = 0;
-        }
-        else {
-            this.style.opacity = 1;
-            this.parentElement.children[0].classList.add("collapse");
-        }
-    // }
+    if (this.style.opacity == 1 || this.style.opacity == "") {
+        this.parentElement.children[0].classList.remove("collapse");
+        this.style.opacity = 0;
+    }
+    else {
+        this.style.opacity = 1;
+        this.parentElement.children[0].classList.add("collapse");
+    }
 }
 
 function changeImage() {
@@ -112,9 +111,10 @@ function changeImage() {
     const element = afterObjects[random];
     const previousElement = afterObjects[previousRandom];
 
+    // stores how many times interval has been called
     loopCount++;
 
-    // Skips over if parent element contains a lock which is activated on click or mouseover
+    // Skips over if parent element contains a lock which is activated or mouseenter and removed on mouseleave
     if (!element.parentElement.classList.contains("lock")) {
         if (element.style.opacity == 1 || element.style.opacity == "") {
             element.parentElement.children[0].classList.remove("collapse");

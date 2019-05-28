@@ -8,13 +8,13 @@
 
 [class*="primary"] {
   color: black;
-  border-color: greenyellow;
+  border-color: yellow;
 }
 
 [class*="info"] {
   font-weight: bold;
   font-size: larger;
-  color: greenyellow !important;
+  color: yellow !important;
 }
 
 span,
@@ -40,11 +40,11 @@ ul li {
 }
 
 a {
-  color: greenyellow;
+  color: yellow;
 }
 
 button.bg-primary:focus {
-  background-color: greenyellow !important;
+  background-color: yellow !important;
 }
 
 :not(:disabled):not(.disabled).active.btn-primary,
@@ -58,7 +58,7 @@ button.bg-primary:hover,
   -webkit-box-shadow: 0px 0px 10px black !important;
           box-shadow: 0px 0px 10px black !important;
   border-color: transparent;
-  background-color: green !important;
+  background-color: orange !important;
 }
 
 .img-fluid {
@@ -68,11 +68,11 @@ button.bg-primary:hover,
 
 a:hover, i:hover {
   text-shadow: 0px 0px 3px black;
-  color: green;
+  color: orange;
 }
 
 .bg-primary, .btn-primary {
-  background-color: greenyellow !important;
+  background-color: yellow !important;
 }
 
 .title {
@@ -97,15 +97,19 @@ a:hover, i:hover {
           align-items: center;
 }
 
+.bg-caption {
+  background-color: black;
+}
+
 .overlay {
-  background: gray;
+  background: #4d4d4d;
   opacity: .8;
-  color: greenyellow;
+  color: yellow;
   margin: 0rem;
 }
 
 .background {
-  background: url(/src/image/green_trees.jpg);
+  background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -114,7 +118,7 @@ a:hover, i:hover {
 
 nav a {
   margin-bottom: 1rem;
-  color: greenyellow;
+  color: yellow;
   font-size: smaller;
 }
 
@@ -133,10 +137,82 @@ nav a i {
 }
 
 .text-overlay {
-  background-color: greenyellow;
   padding-top: 1rem;
-  color: black;
-  font-size: x-large;
+  color: yellow;
+  font-size: 3rem;
   top: 80%;
+}
+
+.footer {
+  font-weight: bolder;
+}
+
+@media (min-width: 0px) {
+  .text-overlay {
+    font-size: .75rem;
+    top: 75%;
+    padding-top: 0rem;
+  }
+  .title {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 276px) {
+  .text-overlay {
+    font-size: .85rem;
+    top: 75%;
+    vertical-align: middle;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 360px) {
+  .text-overlay {
+    font-size: 1rem;
+    top: 80%;
+    vertical-align: middle;
+    padding-top: .75rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 478px) {
+  .text-overlay {
+    font-size: 1.25rem;
+    top: 82%;
+  }
+}
+
+@media (min-width: 576px) {
+  .text-overlay {
+    font-size: 1.75rem;
+    top: 82%;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-overlay {
+    font-size: 1.75rem;
+    top: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-overlay {
+    font-size: 1.25rem;
+    top: 82%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-overlay {
+    font-size: 1.5rem;
+    top: 82%;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
