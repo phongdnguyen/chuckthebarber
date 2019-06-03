@@ -9,7 +9,7 @@
   "author": "Phong D. Nguyen, Second Chance Front-End Programming Workshop",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "file:../../Documents/node_modules/_noDependencies/bootstrap-4.3.1",
-    "jquery": "file:../../Documents/node_modules/_noDependencies/jquery-3.4.1"
+    "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
+    "jquery": "file:../../Server_Simulator/node_modules/jquery-3.4.1"
   }
 }
