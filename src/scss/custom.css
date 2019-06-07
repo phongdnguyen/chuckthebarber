@@ -103,20 +103,24 @@ a:hover, i:hover {
 }
 
 .bg-caption {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.554);
+}
+
+.bg-accent {
+  background: rgba(0, 0, 0, 0.506);
 }
 
 .overlay {
-  background: rgba(76, 76, 76, 0.8);
+  background: rgba(255, 255, 255, 0.321);
   color: rgba(255, 255, 0, 0.98);
   margin: 0rem;
 }
 
 .background {
-  background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg) fixed;
-  background-size: 100% 100%;
+  background: url(/src/image/tim-mossholder-572791-unsplash.jpg) fixed;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   border-radius: 0rem;
 }
 
@@ -155,12 +159,21 @@ nav a i {
   top: 80%;
 }
 
+.trademark {
+  font-size: x-large;
+}
+
+.display-3 {
+  line-height: .75;
+}
+
 o-80 {
   opacity: .8;
 }
 
 .footer {
   font-weight: 300;
+  color: black;
 }
 
 @media (min-width: 0px) {
@@ -170,7 +183,7 @@ o-80 {
     padding-top: 0rem;
   }
   .title {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
 }
 

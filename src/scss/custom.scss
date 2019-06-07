@@ -8,11 +8,13 @@
 // $caption: rgba(0, 0, 0, 0.5);
 
 $primary : rgba(255, 255, 0, 0.98);
+$footer : black;
 $active : orange;
 $shadow : black;
 $foreground : white;
-$overlay : rgba(76, 76, 76, 0.8);
-$caption: rgba(0, 0, 0, 0.5);
+$overlay : rgba(255, 255, 255, 0.321);
+$accent: rgba(0, 0, 0, 0.506);
+$caption: rgba(0, 0, 0, 0.554);
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -112,6 +114,10 @@ a:hover, i:hover{
     background: $caption;
 }
 
+.bg-accent {
+    background: $accent;
+}
+
 .overlay{
     background: $overlay;
     color: $primary;
@@ -119,10 +125,12 @@ a:hover, i:hover{
 }
 
 .background{
-    background: url(/src/image/pepi-stojanovski-509192-unsplash.jpg) fixed;
-    background-size: 100% 100% ;
+    background: url(/src/image/tim-mossholder-572791-unsplash.jpg) fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
+    
+    // background-position-y: -12rem;
     border-radius: 0rem;
 }
 
@@ -161,12 +169,21 @@ nav a i {
     top: 80%;
 }
 
+.trademark{
+    font-size: x-large;
+}
+
+.display-3{
+    line-height: .75;
+}
+ 
 o-80{
     opacity: .8;
 }
 
 .footer{
     font-weight: 300;
+    color: $footer;
     // font-size: larger;
 }
 
@@ -177,7 +194,7 @@ o-80{
         padding-top: 0rem;
     }
     .title{
-        font-size: 2.75rem;
+        font-size: 2.25rem;
     }
 }
 @media (min-width: 276px){

@@ -24,7 +24,7 @@ function removeActive(e) {
 var afterObjects = document.getElementsByClassName("after");
 
 // Create timer
-var timer = window.setInterval(changeImage, 2000);
+var timer = window.setInterval(changeImage, 3000);
 
 // Generate random numbers based on length of after objects
 var randomNumbers = generateRandomNumbers(afterObjects.length);
