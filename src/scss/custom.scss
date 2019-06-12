@@ -84,7 +84,7 @@ button.bg-primary:hover,
     height: 100%;
 }
 
-a:hover, i:hover{
+a:hover:not(#email), i:hover{
     text-shadow: 0px 0px 3px $shadow;
     color: $active;
 }
@@ -132,6 +132,10 @@ a:hover, i:hover{
     
     // background-position-y: -12rem;
     border-radius: 0rem;
+}
+
+#email{
+    color: $footer;
 }
 
 // Social Media Link
@@ -184,6 +188,7 @@ o-80{
 .footer{
     font-weight: 300;
     color: $footer;
+    background-color: white;
     // font-size: larger;
 }
 
