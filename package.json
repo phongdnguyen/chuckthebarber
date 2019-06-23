@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Phong D. Nguyen, Second Chance Front-End Programming Workshop",
+  "author": "Phong D. Nguyen, Second Chance Front-End Web Development Workshop ",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
