@@ -2,14 +2,15 @@
   "name": "chuck-the-barber",
   "version": "1.0.0",
   "description": "Personal website for Chuck Deburger detailing his experience as a barber and show casing his work.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Phong D. Nguyen, Second Chance Front-End Web Development Workshop ",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
+    "express": "file:../../Server_Simulator/node_modules/express",
     "jquery": "file:../../Server_Simulator/node_modules/jquery-3.4.1"
   }
 }
