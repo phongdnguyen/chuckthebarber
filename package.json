@@ -9,8 +9,12 @@
   "author": "Phong D. Nguyen, Second Chance Front-End Web Development Workshop ",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "file:../../Server_Simulator/node_modules/bootstrap-4.3.1",
-    "express": "file:../../Server_Simulator/node_modules/express",
-    "jquery": "file:../../Server_Simulator/node_modules/jquery-3.4.1"
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.6.3"
   }
 }
